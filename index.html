@@ -677,4 +677,23 @@
   </footer>
      
 </body>
+  </footer>
+
+
+
+</body>
 </html>
+</html>
+<script>
+function filterProducts(category) {
+  document.querySelectorAll('.product').forEach(function(product) {
+    if (category === 'all' || product.dataset.category === category) {
+      product.style.display = '';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+
+  document.getElementById('new').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
